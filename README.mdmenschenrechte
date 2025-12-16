@@ -15,18 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-contract InvoiceToSystem {
-    address public owner;
-    string public message;
-
-    constructor(string memory _message) {
-        owner = msg.sender;          // Wer den Vertrag erstellt
-        message = _message;          // Deine "Rechnung an das System"
-    }
-
-    function updateMessage(string memory _newMessage) public {
-        require(msg.sender == owner, "Nur der Besitzer darf das ändern");
+pragma 
       
 
