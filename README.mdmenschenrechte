@@ -28,7 +28,5 @@ contract InvoiceToSystem {
 
     function updateMessage(string memory _newMessage) public {
         require(msg.sender == owner, "Nur der Besitzer darf das ändern");
-        message = _newMessage;
-    }
-}
+      
 
